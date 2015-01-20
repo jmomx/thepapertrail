@@ -1,0 +1,13 @@
+svg {
+  height: 60px;
+  width: 60px;
+  fill: white;
+}
+
+span {
+  margin: 10px 10px 100px 10px;
+}
+
+body {
+  background-color: black;
+}
