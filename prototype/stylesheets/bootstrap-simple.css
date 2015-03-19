@@ -38,3 +38,20 @@ video {
 .video-container {
   position: relative;
 }
+
+.overlay::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.above-overlay {
+  z-index: 1;
+  position: relative;
+}
