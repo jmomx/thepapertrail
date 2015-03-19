@@ -1,25 +1,11 @@
-.inner {
-  padding: 30px;
-}
-
-/*
-* Cover
-*/
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
 h1 {
   text-align: center;
+  color: white;
 }
 
 p {
   text-align: center;
+  color: white;
 }
 
 .vertical-center {
@@ -32,18 +18,20 @@ p {
 
 video {
   position: absolute;
-  height: 100%;
-  background: #222;
-  background-size: cover;
-  transition: 1s opacity;
-  opacity: 1;
+  height: 56.25%;
+  margin: auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transform:rotate(90deg);
 
 }
 
 .main-container {
   min-height: 100%;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background: #222;
 }
 
