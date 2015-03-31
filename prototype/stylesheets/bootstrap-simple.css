@@ -52,10 +52,29 @@ video {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 0;
+  z-index: 1;
 }
 
 .above-overlay {
-  z-index: 1;
+  z-index: 2;
   position: relative;
+}
+
+.play-button {
+  position: relative;
+  left: -32px;
+  font-size: 64px;
+  color: #eee;
+}
+
+#playbutton {
+  display: none;
+}
+
+.play-button-container {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  opacity: 0.0;
+  min-width: 64px;
 }
