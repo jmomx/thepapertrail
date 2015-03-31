@@ -78,3 +78,7 @@ video {
   opacity: 0.0;
   min-width: 64px;
 }
+
+audio {
+  display: none;
+}

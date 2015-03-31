@@ -18,11 +18,13 @@ $(document).ready( function() {
     if ($("#playbutton").css("display") == "none") {
       //if you dont see the play button, you pause the video and show it
       this.pause();
+      $("#papertrailaudio")[0].pause()
       $("#pausebutton").hide();
       $("#playbutton").show();
     }
     else {
       this.play();
+      $("#papertrailaudio")[0].play()
       $("#playbutton").hide();
       $("#pausebutton").show();
     }
@@ -33,5 +35,6 @@ $(document).ready( function() {
 function entersite() {
   $("#welcome-overlay").fadeOut(1500);
   var video = $("#mainvideo");
-  //video[0].play();
+  video[0].play();
+  $("#papertrailaudio")[0].play()
 }
