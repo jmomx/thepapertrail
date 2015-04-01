@@ -9,10 +9,16 @@ var timeOut = null;
 
 $(document).ready( function() {
   var mainvideo = $("#mainvideo");
-  mainvideo.mousemove(function() {
+  mainvideo.hover(function() {
     clearTimeout(timeOut);
     $(".play-button-container").fadeTo(500, 1.0)
-    timeOut = setTimeout('$(".play-button-container").fadeTo(1500, 0.0)', 1500);
+    $(".edge-bar").animate({
+              height: 'toggle'
+    })}, function() {
+    $(".play-button-container").fadeTo(1500, 0.0);
+    $(".edge-bar").animate({
+      height: "toggle"
+    });
   });
   mainvideo.click(function() {
     if ($("#playbutton").css("display") == "none") {
@@ -37,4 +43,8 @@ function entersite() {
   var video = $("#mainvideo");
   video[0].play();
   $("#papertrailaudio")[0].play()
+  // show the controls going away to let user know they are there
+  $(".edge-bar").animate({
+    height: "toggle"
+  });
 }
