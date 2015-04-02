@@ -1,0 +1,5 @@
+---
+name: "japan"
+prettyname: "Japan"
+
+---

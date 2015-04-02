@@ -1,0 +1,5 @@
+---
+name: "colorado"
+prettyname: "Colorado"
+
+---

@@ -1,0 +1,5 @@
+---
+name: "seattle"
+prettyname: "Seattle"
+
+---

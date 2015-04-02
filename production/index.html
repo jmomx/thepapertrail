@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +33,7 @@
 
 </div>
 
-<video muted id="mainvideo" >
+<video loop muted id="mainvideo" >
   <source  src="http://player.vimeo.com/external/123836285.hd.mp4?s=6ddd98cc75f1bb6fb776369a8fa372bf&profile_id=113" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
@@ -61,12 +64,19 @@
 
 
 <div class="bottom-bar edge-bar">
- <div class="bottom-bar-title">
 
- </div>
  <div class="bottom-selections">
-   <div class="row">
-
+   <div class="container">
+     <div class="bottom-bar-title">
+       Locations
+     </div>
+     <div class="row">
+       {% for city in site.cities %}
+       <div class="col-md-offset-4 col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto({{ city.name }})">  {{ city.prettyname }} </a>
+       </div>
+       {% endfor %}
+     </div>
    </div>
  </div>
 </div>
