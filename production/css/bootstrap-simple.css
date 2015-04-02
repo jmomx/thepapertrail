@@ -52,11 +52,11 @@ video {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 11000;
 }
 
 .above-overlay {
-  z-index: 2;
+  z-index: 12000;
   position: relative;
 }
 
@@ -113,5 +113,15 @@ audio {
 }
 
 .location-link {
+  color: white;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 32pt;
+  color: white;
+}
+
+.byline {
   color: white;
 }
