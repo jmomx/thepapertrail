@@ -5,19 +5,17 @@
  *
  */
 
-var timeOut = null;
 
 $(document).ready( function() {
   var mainvideo = $("#mainvideo");
   mainvideo.hover(function() {
-    clearTimeout(timeOut);
     $(".play-button-container").fadeTo(500, 1.0)
-    $(".edge-bar").animate({
-              height: 'toggle'
+    $(".edge-bar").stop(true).animate({
+              height: "show"
     })}, function() {
     $(".play-button-container").fadeTo(1500, 0.0);
-    $(".edge-bar").animate({
-      height: "toggle"
+    $(".edge-bar").delay(5000).animate({
+      height: "hide"
     });
   });
   mainvideo.click(function() {
