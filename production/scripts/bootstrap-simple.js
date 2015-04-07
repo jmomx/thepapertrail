@@ -5,19 +5,26 @@
  *
  */
 
+var coolDown = false;
+var edgeAnimationLength = 500; //
+var edgeAnimationDelay = 2000;
+var coolDownDelay = edgeAnimationDelay + edgeAnimationLength + 50;
 
 $(document).ready( function() {
   var mainvideo = $("#mainvideo");
-  mainvideo.hover(function() {
-    $(".play-button-container").fadeTo(500, 1.0)
-    $(".edge-bar").stop(true).animate({
+  $("body").mousemove(function() {
+    $(".play-button-container").stop(true).fadeTo(500, 1.0);
+    $(".edge-bar").animate({
               height: "show"
-    })}, function() {
-    $(".play-button-container").fadeTo(1500, 0.0);
-    $(".edge-bar").delay(5000).animate({
+    });
+    $(".edge-bar").delay(edgeAnimationDelay).animate({
       height: "hide"
     });
+    $(".play-button-container").fadeTo(500, 0.0);
   });
+
+
+
   mainvideo.click(function() {
     if ($("#playbutton").css("display") == "none") {
       //if you dont see the play button, you pause the video and show it
