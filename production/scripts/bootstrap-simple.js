@@ -9,19 +9,26 @@ var coolDown = false;
 var edgeAnimationLength = 500; //
 var edgeAnimationDelay = 2000;
 var coolDownDelay = edgeAnimationDelay + edgeAnimationLength + 50;
+var mousex = 0;
+var mousey = 0;
+var edgeBarTO = null;
 
 $(document).ready( function() {
-  var mainvideo = $("#mainvideo");
-  $("body").mousemove(function() {
-    $(".play-button-container").stop(true).fadeTo(500, 1.0);
-    $(".edge-bar").animate({
-              height: "show"
-    });
-    $(".edge-bar").delay(edgeAnimationDelay).animate({
-      height: "hide"
-    });
-    $(".play-button-container").fadeTo(500, 0.0);
-  });
+   var mainvideo = $("#mainvideo");
+   // when the mouse moves, show the UI
+   $(document).mousemove(function(e) {
+     clearTimeout(edgeBarTO);
+     $(".play-button-container").stop(true).fadeTo(500, 1.0);
+     $(".edge-bar").animate({
+               height: "show"
+     });
+     edgeBarTO = setTimeout( function() {
+       $(".edge-bar").delay(edgeAnimationDelay).animate({
+         height: "hide"
+       });
+       $(".play-button-container").fadeTo(500, 0.0);
+     }, edgeAnimationDelay);
+   })
 
 
 

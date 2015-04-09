@@ -85,3 +85,32 @@ mainvideo.mouseenter(function() {
    });
    $(".play-button-container").fadeTo(500, 0.0);
  });
+
+ $(document).ready( function() {
+    var mainvideo = $("#mainvideo");
+    // when the mouse moves, show the UI
+    $(document).mousemove(function(e) {
+      $(".play-button-container").stop(true).fadeTo(500, 1.0);
+      $(".edge-bar").animate({
+                height: "show"
+      });
+
+    })
+
+    /***
+     * trying using setInterval
+     *
+     */
+
+    // if there ever is a period of inactivity, hide it
+   //  setInterval( function(e) {
+   //    dist = Math.sqrt(Math.pow(e.pageX-mousex, 2) + Math.pow(e.pageY-mousey, 2));
+   //    if (dist < 5.0) {
+   //      $(".edge-bar").delay(edgeAnimationDelay).animate({
+   //        height: "hide"
+   //      });
+   //      $(".play-button-container").fadeTo(500, 0.0);
+   //    }
+   //    mousex = e.pageX;
+   //    mousey = e.pageY;
+   //  }, 1200);
