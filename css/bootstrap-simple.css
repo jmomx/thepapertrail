@@ -1,15 +1,22 @@
 html {
   height: 100%;
+  font-family: futura-pt, sans-serif;
+}
+
+body {
+  font-family: futura-pt, sans-serif;
 }
 
 h1 {
   text-align: center;
   color: white;
+  font-family: futura-pt, sans-serif;
 }
 
 p {
   text-align: center;
   color: white;
+  font-family: futura-pt, sans-serif;
 }
 
 .vertical-center {
@@ -51,7 +58,7 @@ video {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: #222;
   z-index: 11000;
 }
 
@@ -102,6 +109,7 @@ audio {
 }
 
 .bottom-bar-title {
+  text-transform: uppercase;
   font-size: 20pt;
   color: white;
   margin-bottom: 10px;
@@ -114,6 +122,7 @@ audio {
 
 .location-link {
   color: white;
+  text-transform: uppercase;
 }
 
 .title {
@@ -129,4 +138,5 @@ audio {
 .social-link {
   height: 16px;
   width: 16px;
+  margin: 5px;
 }

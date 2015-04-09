@@ -5,21 +5,33 @@
  *
  */
 
-var timeOut = null;
+var coolDown = false;
+var edgeAnimationLength = 500; //
+var edgeAnimationDelay = 2000;
+var coolDownDelay = edgeAnimationDelay + edgeAnimationLength + 50;
+var mousex = 0;
+var mousey = 0;
+var edgeBarTO = null;
 
 $(document).ready( function() {
-  var mainvideo = $("#mainvideo");
-  mainvideo.hover(function() {
-    clearTimeout(timeOut);
-    $(".play-button-container").fadeTo(500, 1.0)
-    $(".edge-bar").animate({
-              height: 'toggle'
-    })}, function() {
-    $(".play-button-container").fadeTo(1500, 0.0);
-    $(".edge-bar").animate({
-      height: "toggle"
-    });
-  });
+   var mainvideo = $("#mainvideo");
+   // when the mouse moves, show the UI
+   $(document).mousemove(function(e) {
+     clearTimeout(edgeBarTO);
+     $(".play-button-container").stop(true).fadeTo(500, 1.0);
+     $(".edge-bar").animate({
+               height: "show"
+     });
+     edgeBarTO = setTimeout( function() {
+       $(".edge-bar").delay(edgeAnimationDelay).animate({
+         height: "hide"
+       });
+       $(".play-button-container").fadeTo(500, 0.0);
+     }, edgeAnimationDelay);
+   })
+
+
+
   mainvideo.click(function() {
     if ($("#playbutton").css("display") == "none") {
       //if you dont see the play button, you pause the video and show it
