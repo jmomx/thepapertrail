@@ -14,7 +14,6 @@ var mousey = 0;
 var edgeBarTO = null;
 
 $(document).ready( function() {
-   var mainvideo = $("#mainvideo");
    // when the mouse moves, show the UI
    $(document).mousemove(function(e) {
      clearTimeout(edgeBarTO);
@@ -32,7 +31,7 @@ $(document).ready( function() {
 
 
 
-  mainvideo.click(function() {
+  $("#mainvideo").click(function() {
     if ($("#playbutton").css("display") == "none") {
       //if you dont see the play button, you pause the video and show it
       this.pause();
@@ -52,11 +51,26 @@ $(document).ready( function() {
 
 function entersite() {
   $("#welcome-overlay").fadeOut(1500);
-  var video = $("#mainvideo");
-  video[0].play();
+  var mainvideo = $("#mainvideo");
+  mainvideo[0].play();
   $("#papertrailaudio")[0].play()
   // show the controls going away to let user know they are there
   $(".edge-bar").animate({
     height: "toggle"
   });
+}
+
+function switchto(name) {
+  videourl = urlmap[name];
+  var mainvideo = $("#mainvideo");
+  mainvideo.fadeOut();
+  mainvideo[0].pause()
+  // hide play/pause
+  // show loading prolly
+  mainvideo[0].setAttribute("src", videourl);
+  mainvideo[0].load();
+  mainvideo[0].onloadeddata = (function () {
+    mainvideo.fadeIn();
+  });
+  mainvideo[0].play();
 }
