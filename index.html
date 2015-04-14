@@ -71,9 +71,11 @@
     <div class="row vertical-center">
       <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
         <p> weclome to </p>
-        <h1 class="title">The Paper Trail</h1>
-        <p>an interactive travelling album by <a href="http://thepapersmusic.com">The Papers</a></p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button" onclick="entersite()">Begin</a></p>
+        <p class="title">
+          <img id="top-bar-title" class="title-svg" src="images/title.svg"></img>
+        </p>
+        <p>an interactive travelling album by <a class="loud-link" href="http://thepapersmusic.com">The Papers</a></p>
+        <p class="enter-btn-container"><a class="enter-btn" href="#" role="button" onclick="entersite()">Begin</a></p>
       </div>
     </div>
   </div>
@@ -83,7 +85,7 @@
 <div class="bottom-bar edge-bar">
 
  <div class="bottom-selections">
-   <div class="container">
+   <div class="container bottom-bar-container">
      <div class="bottom-bar-title">
        Locations
      </div>
@@ -102,7 +104,11 @@
        </div>
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
-          <a class="location-link" href="#" onclick="switchto('chicago')">  Chicago </a>
+          <a class="location-link" href="#" onclick="switchto('chicagolakefront')">  Chicago - Lakefront </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('chicagoprarie')">  Chicago - Prarie </a>
        </div>
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
@@ -114,6 +120,10 @@
        </div>
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('grenada')">  Grenada </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
           <a class="location-link" href="#" onclick="switchto('idaho')">  Idaho </a>
        </div>
        
@@ -122,7 +132,15 @@
        </div>
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
-          <a class="location-link" href="#" onclick="switchto('japan')">  Japan </a>
+          <a class="location-link" href="#" onclick="switchto('kansascity')">  Kansas City </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('london')">  London </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('metz')">  Metz </a>
        </div>
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
@@ -143,6 +161,10 @@
        
        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
           <a class="location-link" href="#" onclick="switchto('thecanaryislands')">  The Canary Islands </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('tokyo')">  Tokyo </a>
        </div>
        
      </div>
