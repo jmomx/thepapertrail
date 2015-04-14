@@ -1,5 +1,0 @@
----
-name: "chicago"
-prettyname: "Chicago"
-
----

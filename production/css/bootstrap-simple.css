@@ -19,6 +19,21 @@ p {
   font-family: futura-pt, sans-serif;
 }
 
+a {
+  color:white;
+  /*text-decoration: underline;*/
+}
+
+a:hover {
+  color:white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:white;
+  text-decoration: underline;
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -37,6 +52,28 @@ video {
   right:0;
   transform:rotate(90deg);
 
+}
+
+.enter-btn {
+  background-color: #222;
+  font-size: 150%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px;
+
+}
+
+.enter-btn:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #222;
+}
+
+.enter-btn-container {
+  margin-top: 30px;
 }
 
 .main-container {
@@ -95,7 +132,7 @@ audio {
   width: 100%;
   z-index: 10000;
   background-color: #222;
-  height: 180px;
+  /*height: 180px;*/
 }
 
 .top-bar {
@@ -116,13 +153,19 @@ audio {
   margin-top: 10px;
 }
 
+.bottom-bar-container {
+  margin-bottom: 10px;
+}
+
 .location-link:hover {
-  color:white;
+  color: white;
+  text-decoration: underline;
 }
 
 .location-link {
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .title {
@@ -135,8 +178,12 @@ audio {
   color: white;
 }
 
+.loud-link {
+  text-decoration: underline;
+}
 .social-link {
   height: 16px;
   width: 16px;
   margin: 5px;
+  text-decoration: none;
 }
