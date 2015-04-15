@@ -10,6 +10,12 @@ var edgeAnimationDelay = 2000;
 var edgeBarTO = null;
 
 $(document).ready( function() {
+
+    // pick a video to use
+    var keys = Object.keys(urlmap);
+    var videonum = Math.floor(Math.random() * keys.length);
+    switchto(keys[videonum]);
+    
    // when the mouse moves, show the UI
    $(document).mousemove(function(e) {
      clearTimeout(edgeBarTO);
@@ -51,9 +57,13 @@ function entersite() {
   mainvideo[0].play();
   $("#papertrailaudio")[0].play()
   // show the controls going away to let user know they are there
-  $(".edge-bar").animate({
-    height: "toggle"
-  });
+  //
+  //  not sure if doing this makes sense right now
+  //
+  // $(".edge-bar").animate({
+  //   height: "toggle"
+  // });
+
 }
 
 function switchto(name) {
