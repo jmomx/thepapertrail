@@ -154,7 +154,7 @@ audio {
 }
 
 .bottom-bar-container {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .location-link:hover {
@@ -180,6 +180,10 @@ audio {
   margin-right: auto;
 }
 
+.top-bar-title-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .byline {
   color: white;
