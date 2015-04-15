@@ -5,12 +5,8 @@
  *
  */
 
-var coolDown = false;
 var edgeAnimationLength = 500; //
 var edgeAnimationDelay = 2000;
-var coolDownDelay = edgeAnimationDelay + edgeAnimationLength + 50;
-var mousex = 0;
-var mousey = 0;
 var edgeBarTO = null;
 
 $(document).ready( function() {
