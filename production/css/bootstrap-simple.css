@@ -180,6 +180,10 @@ audio {
   margin-right: auto;
 }
 
+.top-bar-title-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .byline {
   color: white;

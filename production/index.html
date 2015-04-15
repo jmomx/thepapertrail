@@ -34,24 +34,31 @@
 <body class="main-container">
 
 <div class="top-bar edge-bar">
-<p class="title">
-  THE PAPER TRAIL
-</p>
-<p class="byline">
-  brought to you by <a href="http://thepapersmusic.com">The Papers</a>
+  <div class="container above-overlay">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+        <div class="top-bar-title-container">
+          <img id="welcome-title" class="title-svg" src="images/title.svg"></img>
+        </div>
+        <p class="byline">
+          brought to you by <a href="http://thepapersmusic.com">The Papers</a>
 
-  <a href=“http://facebook.com/papersmusic”>
-    <img id="facebooklink" class="glyphicon glyphicon-play social-link" src="images/facebook-with-circle.svg"></img>
-  </a>
+          <a href=“http://facebook.com/papersmusic”>
+            <img id="facebooklink" class="glyphicon glyphicon-play social-link" src="images/facebook-with-circle.svg"></img>
+          </a>
 
-  <a href="http://instagram.com/thepapersband">
-    <img id="instagramlink" class="glyphicon glyphicon-pause social-link" src="images/instagram-with-circle.svg"></img>
-  </a>
+          <a href="http://instagram.com/thepapersband">
+            <img id="instagramlink" class="glyphicon glyphicon-pause social-link" src="images/instagram-with-circle.svg"></img>
+          </a>
 
-  <a href="http://thepapersmusic.com/">
-    <img id="tumblrlink" class="glyphicon glyphicon-pause social-link" src="images/tumblr-with-circle.svg"></img>
-  </a>
-</p>
+          <a href="http://thepapersmusic.com/">
+            <img id="tumblrlink" class="glyphicon glyphicon-pause social-link" src="images/tumblr-with-circle.svg"></img>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <video loop muted id="mainvideo" src="http://player.vimeo.com/external/123836285.hd.mp4?s=6ddd98cc75f1bb6fb776369a8fa372bf&profile_id=113" type="video/mp4">
@@ -72,10 +79,13 @@
 <div class="overlay" id="welcome-overlay">
   <div class="container above-overlay">
     <div class="row vertical-center">
-      <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
         <p> weclome to </p>
         <p class="title">
-          <img id="top-bar-title" class="title-svg" src="images/title.svg"></img>
+          <img id="welcome-title" class="title-svg" src="images/title.svg"></img>
+        </p>
+        <p class="logo">
+          <img id="welcome-logo" class="logo-svg" src="images/logo.svg"></img>
         </p>
         <p>an interactive travelling album by <a class="loud-link" href="http://thepapersmusic.com">The Papers</a></p>
         <p class="enter-btn-container"><a class="enter-btn" href="#" role="button" onclick="entersite()">Begin</a></p>
