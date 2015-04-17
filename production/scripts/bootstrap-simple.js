@@ -14,8 +14,9 @@ $(document).ready( function() {
     // pick a video to use
     var keys = Object.keys(urlmap);
     var videonum = Math.floor(Math.random() * keys.length);
-    switchto(keys[videonum]);
     
+    switchto(keys[videonum]);
+
    // when the mouse moves, show the UI
    $(document).mousemove(function(e) {
      clearTimeout(edgeBarTO);
@@ -33,16 +34,16 @@ $(document).ready( function() {
 
 
 
-  $("#mainvideo").click(function() {
+  $("#clicktargetcontainer").click(function() {
     if ($("#playbutton").css("display") == "none") {
       //if you dont see the play button, you pause the video and show it
-      this.pause();
+      $("#mainvideo")[0].pause();
       $("#papertrailaudio")[0].pause()
       $("#pausebutton").hide();
       $("#playbutton").show();
     }
     else {
-      this.play();
+      $("#mainvideo")[0].play();
       $("#papertrailaudio")[0].play()
       $("#playbutton").hide();
       $("#pausebutton").show();
