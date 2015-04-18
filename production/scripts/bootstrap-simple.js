@@ -72,12 +72,17 @@ function switchto(name) {
   var mainvideo = $("#mainvideo");
   mainvideo.fadeOut();
   mainvideo[0].pause()
+  $("#location-header").text(namemap[name]);
   // hide play/pause
   // show loading prolly
   mainvideo[0].setAttribute("src", videourl);
   mainvideo[0].load();
   mainvideo[0].onloadeddata = (function () {
     mainvideo.fadeIn();
+    var time = Math.random() * mainvideo[0].duration; 
+    mainvideo[0].currentTime = time;
+    mainvideo[0].play();
   });
-  mainvideo[0].play();
+
+  
 }
