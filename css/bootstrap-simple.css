@@ -4,6 +4,8 @@ html {
 }
 
 body {
+  background: #222;
+  color: white;
   font-family: futura-pt, sans-serif;
 }
 
@@ -11,6 +13,15 @@ h1 {
   text-align: center;
   color: white;
   font-family: futura-pt, sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  /*font-weight: bold;*/
 }
 
 p {
@@ -26,12 +37,12 @@ a {
 
 a:hover {
   color:white;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 a:visited {
   color:white;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .vertical-center {
@@ -197,4 +208,52 @@ audio {
   width: 16px;
   margin: 5px;
   text-decoration: none;
+}
+
+#clicktargetcontainer {
+  min-height: 100%;
+}
+
+
+#clicktargetcontainer::after {
+  background: linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,.3));
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8000;
+}
+
+
+
+#location-header {
+  text-transform: uppercase;
+  font-size: 30pt;
+  color: white ;
+  z-index: 9000;
+  position: fixed;
+  margin-top: 0px;
+  margin-bottom: auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.credits-link {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.credit-list-item {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.credits-title {
+  font-size: 600%;
+  font-weight: 100;
 }
