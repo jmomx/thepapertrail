@@ -1,0 +1,259 @@
+html {
+  height: 100%;
+  font-family: futura-pt, sans-serif;
+}
+
+body {
+  background: #222;
+  color: white;
+  font-family: futura-pt, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: futura-pt, sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  /*font-weight: bold;*/
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: futura-pt, sans-serif;
+}
+
+a {
+  color:white;
+  /*text-decoration: underline;*/
+}
+
+a:hover {
+  color:white;
+  /*text-decoration: underline;*/
+}
+
+a:visited {
+  color:white;
+  /*text-decoration: underline;*/
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+video {
+  position: absolute;
+  height: 56.25%;
+  margin: auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transform:rotate(90deg);
+
+}
+
+.enter-btn {
+  background-color: #222;
+  font-size: 150%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px;
+
+}
+
+.enter-btn:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #222;
+}
+
+.enter-btn-container {
+  margin-top: 30px;
+}
+
+.main-container {
+  min-height: 100%;
+  position: relative;
+  /*overflow: hidden;*/
+  background: #000;
+}
+
+.video-container {
+  position: relative;
+}
+
+.overlay::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  z-index: 11000;
+}
+
+.above-overlay {
+  z-index: 12000;
+  position: relative;
+}
+
+.play-button {
+  position: relative;
+  left: -32px;
+  font-size: 64px;
+  color: #eee;
+}
+
+#playbutton {
+  display: none;
+}
+
+.play-button-container {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  opacity: 0.0;
+  min-width: 64px;
+}
+
+audio {
+  display: none;
+}
+
+.edge-bar {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  background-color: #222;
+  /*height: 180px;*/
+}
+
+.top-bar {
+  bottom: auto;
+  top: 0;
+}
+
+.bottom-bar {
+  bottom: 0;
+  top: auto;
+}
+
+.bottom-bar-title {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.bottom-bar-container {
+  margin-bottom: 20px;
+}
+
+.location-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.location-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 32pt;
+  color: white;
+}
+
+.title-svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-bar-title-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.byline {
+  color: white;
+}
+
+.loud-link {
+  text-decoration: underline;
+}
+.social-link {
+  height: 16px;
+  width: 16px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#clicktargetcontainer {
+  min-height: 100%;
+}
+
+
+#clicktargetcontainer::after {
+  background: linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,.3));
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8000;
+}
+
+
+
+#location-header {
+  text-transform: uppercase;
+  font-size: 30pt;
+  color: white ;
+  z-index: 9000;
+  position: fixed;
+  margin-top: 0px;
+  margin-bottom: auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.credits-link {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.credit-list-item {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.credits-title {
+  font-size: 600%;
+  font-weight: 100;
+}

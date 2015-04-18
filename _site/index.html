@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Paper Trail</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-simple.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Typekit embed info -->
+  <script src="//use.typekit.net/tkg7mej.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body class="main-container">
+
+<!-- <div class="top-bar edge-bar">
+  <div class="container above-overlay">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+        <div class="top-bar-title-container">
+          <img id="welcome-title" class="title-svg" src="images/title.svg"></img>
+        </div>
+        <p class="byline">
+          brought to you by <a href="http://thepapersmusic.com">The Papers</a>
+
+          <a href="http://facebook.com/papersmusic" target="_blank">
+            <img id="facebooklink" class="glyphicon glyphicon-play social-link" src="images/facebook-with-circle.svg"></img>
+          </a>
+
+          <a href="http://instagram.com/thepapersband" target="_blank">
+            <img id="instagramlink" class="glyphicon glyphicon-pause social-link" src="images/instagram-with-circle.svg"></img>
+          </a>
+
+          <a href="http://thepapersmusic.com/" target="_blank">
+            <img id="tumblrlink" class="glyphicon glyphicon-pause social-link" src="images/tumblr-with-circle.svg"></img>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+</div>
+
+<div class="centered" id="location-header">
+  Seattle
+</div>
+
+<div id="clicktargetcontainer">
+	<video loop muted id="mainvideo" src="http://player.vimeo.com/external/123836285.hd.mp4?s=6ddd98cc75f1bb6fb776369a8fa372bf&profile_id=113" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+
+
+<div class="play-button-container vertical-center">
+  <div id="inner-button-container">
+    <span id="playbutton" class="glyphicon glyphicon-play play-button" ></span>
+    <span id="pausebutton" class="glyphicon glyphicon-pause play-button" ></span>
+  </div>
+</div>
+
+</div>
+
+<div class="overlay" id="welcome-overlay">
+  <div class="container above-overlay">
+    <div class="row vertical-center">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+        <p> weclome to </p>
+        <p class="title">
+          <img id="welcome-title" class="title-svg" src="images/title.svg"></img>
+        </p>
+        <p class="logo">
+          <img id="welcome-logo" class="logo-svg" src="images/logo.svg"></img>
+        </p>
+        <p>an interactive travelling album by <a class="loud-link" href="http://thepapersmusic.com">The Papers</a>
+          <a href="http://facebook.com/papersmusic" target="_blank">
+            <img id="facebooklink" class="glyphicon glyphicon-play social-link" src="images/facebook-with-circle.svg"></img>
+          </a>
+
+          <a href="http://instagram.com/thepapersband" target="_blank">
+            <img id="instagramlink" class="glyphicon glyphicon-pause social-link" src="images/instagram-with-circle.svg"></img>
+          </a>
+
+          <a href="http://thepapersmusic.com/" target="_blank">
+            <img id="tumblrlink" class="glyphicon glyphicon-pause social-link" src="images/tumblr-with-circle.svg"></img>
+          </a>
+        </p>
+        <p class="enter-btn-container"><a class="enter-btn" href="#" role="button" onclick="entersite()">Begin</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<audio loop src="audio/ANYWAYVIDEOAUDIO.mp3" id="papertrailaudio">
+
+</audio>
+
+
+
+<div class="bottom-bar edge-bar">
+
+ <div class="bottom-selections">
+   <div class="container bottom-bar-container">
+     <div class="bottom-bar-title">
+       Locations
+     </div>
+     <div class="row">
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('bologna')">  Bologna </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('buffalo')">  Buffalo </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('chicagolakefront')">  Chicago - Lakefront </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('chicagoprarie')">  Chicago - Prarie </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('grenada')">  Grenada </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('india')">  India </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('kansascity')">  Kansas City </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('london')">  London </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('metz')">  Metz </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('seattle')">  Seattle </a>
+       </div>
+       
+       <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+          <a class="location-link" href="#" onclick="switchto('tokyo')">  Tokyo </a>
+       </div>
+       
+     </div>
+     <p class="credits-link loud-link"> <a href="credits" target="_blank"> credits </a> </p>
+   </div>
+ </div>
+</div>
+
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="scripts/city-data.js"></script>
+<script src="scripts/bootstrap-simple.js"></script>
+
+
+</html>
