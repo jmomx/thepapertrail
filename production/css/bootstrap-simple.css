@@ -7,7 +7,6 @@ body {
   background: #222;
   color: white;
   font-family: futura-pt, sans-serif;
-  height: 100%;
 }
 
 h1 {
@@ -103,7 +102,7 @@ video {
   position: relative;
 }
 
-.overlay::after{
+.overlay::after {
   content: " ";
   display: block;
   position: absolute;
@@ -217,7 +216,7 @@ audio {
 
 #clicktargetcontainer {
   min-height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 100%;
 }
 
