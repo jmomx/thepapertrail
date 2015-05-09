@@ -14,7 +14,7 @@ $(document).ready( function() {
     // pick a video to use
     var keys = Object.keys(urlmap);
     var videonum = Math.floor(Math.random() * keys.length);
-    
+
     switchto(keys[videonum]);
 
    // when the mouse moves, show the UI
@@ -25,7 +25,7 @@ $(document).ready( function() {
                height: "show"
      });
      edgeBarTO = setTimeout( function() {
-       $(".edge-bar").delay(edgeAnimationDelay).animate({
+       $(".edge-bar").delay(edgeAnimationDelay).stop(true).animate({
          height: "hide"
        });
        $(".play-button-container").fadeTo(500, 0.0);
@@ -70,19 +70,23 @@ function entersite() {
 function switchto(name) {
   videourl = urlmap[name];
   var mainvideo = $("#mainvideo");
-  mainvideo.fadeOut();
-  mainvideo[0].pause()
-  $("#location-header").text(namemap[name]);
-  // hide play/pause
-  // show loading prolly
-  mainvideo[0].setAttribute("src", videourl);
-  mainvideo[0].load();
+  mainvideo.fadeOut(function() {
+    $("#location-header").text(namemap[name]);
+    // hide play/pause
+    // show loading prolly
+    mainvideo[0].setAttribute("src", videourl);
+
+  });
   mainvideo[0].onloadeddata = (function () {
-    mainvideo.fadeIn();
-    var time = Math.random() * mainvideo[0].duration; 
+    var time = Math.random() * mainvideo[0].duration;
     mainvideo[0].currentTime = time;
-    mainvideo[0].play();
+    mainvideo[0].oncanplay = function() {
+      //if video is not paused (pause button showing)
+      mainvideo[0].play();
+      mainvideo.delay(500).fadeIn();
+    };
   });
 
-  
+
+
 }

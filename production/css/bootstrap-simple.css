@@ -7,6 +7,7 @@ body {
   background: #222;
   color: white;
   font-family: futura-pt, sans-serif;
+  height: 100%;
 }
 
 h1 {
@@ -48,9 +49,12 @@ a:visited {
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
+  -webkit-flex-align: center;
+  vertical-align: center;
 }
 
 video {
@@ -62,6 +66,7 @@ video {
   left:0;
   right:0;
   transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
 
 }
 
@@ -212,6 +217,8 @@ audio {
 
 #clicktargetcontainer {
   min-height: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
 
@@ -257,3 +264,4 @@ audio {
   font-size: 600%;
   font-weight: 100;
 }
+
