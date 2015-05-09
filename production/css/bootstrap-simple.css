@@ -264,3 +264,10 @@ audio {
   font-weight: 100;
 }
 
+.section-wrapper {
+ display: inline-block; 
+}
+
+.centered-content {
+  text-align: center;
+}
