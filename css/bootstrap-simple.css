@@ -48,9 +48,12 @@ a:visited {
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
+  -webkit-flex-align: center;
+  vertical-align: center;
 }
 
 video {
@@ -62,6 +65,7 @@ video {
   left:0;
   right:0;
   transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
 
 }
 
@@ -98,7 +102,7 @@ video {
   position: relative;
 }
 
-.overlay::after{
+.overlay::after {
   content: " ";
   display: block;
   position: absolute;
@@ -204,14 +208,16 @@ audio {
   text-decoration: underline;
 }
 .social-link {
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
   margin: 5px;
   text-decoration: none;
 }
 
 #clicktargetcontainer {
   min-height: 100%;
+  /*overflow: hidden;*/
+  height: 100%;
 }
 
 
@@ -256,4 +262,12 @@ audio {
 .credits-title {
   font-size: 600%;
   font-weight: 100;
+}
+
+.section-wrapper {
+ display: inline-block; 
+}
+
+.centered-content {
+  text-align: center;
 }
