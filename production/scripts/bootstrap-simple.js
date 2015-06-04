@@ -8,6 +8,7 @@
 var edgeAnimationLength = 500; //
 var edgeAnimationDelay = 2000;
 var edgeBarTO = null;
+var interactionMode = false;
 
 $(document).ready( function() {
 
@@ -17,42 +18,38 @@ $(document).ready( function() {
 
     switchto(keys[videonum]);
 
+   $("#enter-btn").on("click touchstart", entersite); 
    // when the mouse moves, show the UI
-   $(document).mousemove(function(e) {
-     clearTimeout(edgeBarTO);
-     $(".play-button-container").stop(true).fadeTo(500, 1.0);
-     $(".edge-bar").animate({
-               height: "show"
-     });
-     edgeBarTO = setTimeout( function() {
-       $(".edge-bar").delay(edgeAnimationDelay).stop(true).animate({
-         height: "hide"
-       });
-       $(".play-button-container").fadeTo(500, 0.0);
-     }, edgeAnimationDelay);
-   })
+   //$(document).mousemove(function(e) {
+   // showUI();   
+   //})
 
-
-
-  $("#clicktargetcontainer").click(function() {
-    if ($("#playbutton").css("display") == "none") {
-      //if you dont see the play button, you pause the video and show it
-      $("#mainvideo")[0].pause();
-      $("#papertrailaudio")[0].pause()
-      $("#pausebutton").hide();
-      $("#playbutton").show();
+  $("#clicktargetcontainer").on("click touchstart", function() {
+    if (interactionMode) {
+	    if ($("#playbutton").css("display") == "none") {
+	      //if you dont see the play button, you pause the video and show it
+	      $("#mainvideo")[0].pause();
+	      $("#papertrailaudio")[0].pause()
+	      $("#pausebutton").hide();
+	      $("#playbutton").show();
+	    }
+	    else {
+	      $("#mainvideo")[0].play();
+	      $("#papertrailaudio")[0].play()
+	      $("#playbutton").hide();
+	      $("#pausebutton").show();
+	    }
     }
     else {
-      $("#mainvideo")[0].play();
-      $("#papertrailaudio")[0].play()
-      $("#playbutton").hide();
-      $("#pausebutton").show();
+     showUI();	
+
     }
   });
 });
 
 
 function entersite() {
+  console.log("Click registered");
   $("#welcome-overlay").fadeOut(1500);
   var mainvideo = $("#mainvideo");
   mainvideo[0].play();
@@ -86,7 +83,24 @@ function switchto(name) {
       mainvideo.delay(500).fadeIn();
     };
   });
-
-
-
 }
+
+
+function hideUI() {
+       $(".edge-bar").stop(true).animate({
+         height: "hide"
+       });
+       $(".play-button-container").fadeTo(500, 0.0);
+       interactionMode = false;
+}
+
+
+function showUI() {
+     clearTimeout(edgeBarTO);
+     $(".play-button-container").stop(true).fadeTo(500, 1.0);
+     $(".edge-bar").animate({
+               height: "show"
+     });
+     edgeBarTO = setTimeout(hideUI, edgeAnimationDelay);
+     interactionMode = true;
+} 
