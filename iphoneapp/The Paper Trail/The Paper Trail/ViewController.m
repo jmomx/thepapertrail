@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+        _webView.allowsInlineMediaPlayback = YES;
+        NSString *fullURL = @"http://127.0.0.1:4000";
+        NSURL *url = [NSURL URLWithString:fullURL];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        [_webView loadRequest:requestObj];
+
 }
 
 - (void)didReceiveMemoryWarning {
