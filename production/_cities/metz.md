@@ -1,6 +1,6 @@
 ---
 name: "metz"
 prettyname: "Metz"
-videourl: "http://player.vimeo.com/external/124894943.sd.mp4?s=01d9d4140d107507f4af1e0ebda28aa3&profile_id=112"
-videourlhd: "http://player.vimeo.com/external/124894943.hd.mp4?s=e3a175708a95597b865bbf25d728004e&profile_id=113"
+videourl: "https://player.vimeo.com/external/142699110.sd.mp4?s=0564ce1135a2e759fa5629a6c72c771f&profile_id=112"
+videourlhd: "https://player.vimeo.com/external/142699110.hd.mp4?s=9c68d5be41ed043ea3e3beb8ed8737d8&profile_id=113"
 ---
