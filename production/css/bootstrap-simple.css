@@ -59,7 +59,7 @@ a:visited {
 video {
   overflow: hidden;
   position: absolute;
-  height: 56.25%;
+  height: 100%;
   margin: auto;
   top:0;
   bottom:0;
