@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, UIWebViewDelegate  {
     
-    
     @IBOutlet var webview: UIWebView!
     
     func loadAddressURL() {
         webview.allowsInlineMediaPlayback = true
-        let fullURL =  "http://the-paper-trail.com"
+        let fullURL =  "http://127.0.0.1:4000"
+        //let fullURL =  "http://the-paper-trail.com"
         let requestURL = NSURL(string:fullURL)
         let requestObj = NSURLRequest(URL:requestURL!)
         webview.loadRequest(requestObj)
@@ -27,13 +27,19 @@ class ViewController: UIViewController, UIWebViewDelegate  {
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         switch navigationType {
         case .LinkClicked:
-            let match = request.URL?.path!.rangeOfString("paper-trail$", options: .RegularExpressionSearch)
-            if match==nil {
-            // Open external links in Safari
-            UIApplication.sharedApplication().openURL(request.URL!)
-            return false
+            let facebook = request.URL?.path!.rangeOfString("facebook$", options: .RegularExpressionSearch)
+            let tumblr = request.URL?.path!.rangeOfString("tumblr$", options: .RegularExpressionSearch)
+            let instagram = request.URL?.path!.rangeOfString("instagram$", options: .RegularExpressionSearch)
+            let credits = request.URL?.path!.rangeOfString("credits$", options: .RegularExpressionSearch)
+            
+            if (facebook==nil && tumblr==nil && instagram==nil && credits==nil) {
+                //then it's in the app and the click stays in the app
+                 return true
             } else {
-                return true
+                // Open external links in Safari
+                UIApplication.sharedApplication().openURL(request.URL!)
+                return false
+
             }
         default:
             // Handle other navigation types...

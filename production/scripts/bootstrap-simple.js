@@ -18,13 +18,15 @@ $(document).ready( function() {
 
     switchto(keys[videonum]);
 
-   $("#enter-btn").on("click touchstart", entersite); 
+   $("#enter-btn").on("click", function(e) {
+     entersite();
+   });
    // when the mouse moves, show the UI
    //$(document).mousemove(function(e) {
-   // showUI();   
+   // showUI();
    //})
 
-  $("#clicktargetcontainer").on("click touchstart", function() {
+  $("#clicktargetcontainer").on("click", function() {
     if (interactionMode) {
 	    if ($("#playbutton").css("display") == "none") {
 	      //if you dont see the play button, you pause the video and show it
@@ -41,7 +43,7 @@ $(document).ready( function() {
 	    }
     }
     else {
-     showUI();	
+     showUI();
 
     }
   });
@@ -103,4 +105,4 @@ function showUI() {
      });
      edgeBarTO = setTimeout(hideUI, edgeAnimationDelay);
      interactionMode = true;
-} 
+}
