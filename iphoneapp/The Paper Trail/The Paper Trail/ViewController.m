@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
         _webView.allowsInlineMediaPlayback = YES;
-        NSString *fullURL = @"http://127.0.0.1:4000";
+        NSString *fullURL = @"http://the-paper-trail.com";
         NSURL *url = [NSURL URLWithString:fullURL];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
         [_webView loadRequest:requestObj];

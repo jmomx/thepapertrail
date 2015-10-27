@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52CA48771BD79DFD0036633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA48761BD79DFD0036633F /* AppDelegate.swift */; };
+		52CA48791BD79DFD0036633F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA48781BD79DFD0036633F /* ViewController.swift */; };
+		52CA487C1BD79DFD0036633F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CA487A1BD79DFD0036633F /* Main.storyboard */; };
+		52CA487E1BD79DFD0036633F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CA487D1BD79DFD0036633F /* Assets.xcassets */; };
+		52CA48811BD79DFD0036633F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CA487F1BD79DFD0036633F /* LaunchScreen.storyboard */; };
+		52CA488C1BD79DFD0036633F /* The_Paper_TrailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA488B1BD79DFD0036633F /* The_Paper_TrailTests.swift */; };
+		52CA48971BD79DFD0036633F /* The_Paper_TrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA48961BD79DFD0036633F /* The_Paper_TrailUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CA48881BD79DFD0036633F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA486B1BD79DFC0036633F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CA48721BD79DFC0036633F;
+			remoteInfo = "The Paper Trail";
+		};
+		52CA48931BD79DFD0036633F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CA486B1BD79DFC0036633F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CA48721BD79DFC0036633F;
+			remoteInfo = "The Paper Trail";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52CA48731BD79DFC0036633F /* The Paper Trail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Paper Trail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CA48761BD79DFD0036633F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52CA48781BD79DFD0036633F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52CA487B1BD79DFD0036633F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52CA487D1BD79DFD0036633F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52CA48801BD79DFD0036633F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52CA48821BD79DFD0036633F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CA48871BD79DFD0036633F /* The Paper TrailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Paper TrailTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CA488B1BD79DFD0036633F /* The_Paper_TrailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Paper_TrailTests.swift; sourceTree = "<group>"; };
+		52CA488D1BD79DFD0036633F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CA48921BD79DFD0036633F /* The Paper TrailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Paper TrailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CA48961BD79DFD0036633F /* The_Paper_TrailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Paper_TrailUITests.swift; sourceTree = "<group>"; };
+		52CA48981BD79DFD0036633F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CA48701BD79DFC0036633F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA48841BD79DFD0036633F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA488F1BD79DFD0036633F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52CA486A1BD79DFC0036633F = {
+			isa = PBXGroup;
+			children = (
+				52CA48751BD79DFC0036633F /* The Paper Trail */,
+				52CA488A1BD79DFD0036633F /* The Paper TrailTests */,
+				52CA48951BD79DFD0036633F /* The Paper TrailUITests */,
+				52CA48741BD79DFC0036633F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52CA48741BD79DFC0036633F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CA48731BD79DFC0036633F /* The Paper Trail.app */,
+				52CA48871BD79DFD0036633F /* The Paper TrailTests.xctest */,
+				52CA48921BD79DFD0036633F /* The Paper TrailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CA48751BD79DFC0036633F /* The Paper Trail */ = {
+			isa = PBXGroup;
+			children = (
+				52CA48761BD79DFD0036633F /* AppDelegate.swift */,
+				52CA48781BD79DFD0036633F /* ViewController.swift */,
+				52CA487A1BD79DFD0036633F /* Main.storyboard */,
+				52CA487D1BD79DFD0036633F /* Assets.xcassets */,
+				52CA487F1BD79DFD0036633F /* LaunchScreen.storyboard */,
+				52CA48821BD79DFD0036633F /* Info.plist */,
+			);
+			path = "The Paper Trail";
+			sourceTree = "<group>";
+		};
+		52CA488A1BD79DFD0036633F /* The Paper TrailTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CA488B1BD79DFD0036633F /* The_Paper_TrailTests.swift */,
+				52CA488D1BD79DFD0036633F /* Info.plist */,
+			);
+			path = "The Paper TrailTests";
+			sourceTree = "<group>";
+		};
+		52CA48951BD79DFD0036633F /* The Paper TrailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52CA48961BD79DFD0036633F /* The_Paper_TrailUITests.swift */,
+				52CA48981BD79DFD0036633F /* Info.plist */,
+			);
+			path = "The Paper TrailUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CA48721BD79DFC0036633F /* The Paper Trail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CA489B1BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper Trail" */;
+			buildPhases = (
+				52CA486F1BD79DFC0036633F /* Sources */,
+				52CA48701BD79DFC0036633F /* Frameworks */,
+				52CA48711BD79DFC0036633F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Paper Trail";
+			productName = "The Paper Trail";
+			productReference = 52CA48731BD79DFC0036633F /* The Paper Trail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52CA48861BD79DFD0036633F /* The Paper TrailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CA489E1BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailTests" */;
+			buildPhases = (
+				52CA48831BD79DFD0036633F /* Sources */,
+				52CA48841BD79DFD0036633F /* Frameworks */,
+				52CA48851BD79DFD0036633F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CA48891BD79DFD0036633F /* PBXTargetDependency */,
+			);
+			name = "The Paper TrailTests";
+			productName = "The Paper TrailTests";
+			productReference = 52CA48871BD79DFD0036633F /* The Paper TrailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52CA48911BD79DFD0036633F /* The Paper TrailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CA48A11BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailUITests" */;
+			buildPhases = (
+				52CA488E1BD79DFD0036633F /* Sources */,
+				52CA488F1BD79DFD0036633F /* Frameworks */,
+				52CA48901BD79DFD0036633F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CA48941BD79DFD0036633F /* PBXTargetDependency */,
+			);
+			name = "The Paper TrailUITests";
+			productName = "The Paper TrailUITests";
+			productReference = 52CA48921BD79DFD0036633F /* The Paper TrailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CA486B1BD79DFC0036633F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "John Morrow";
+				TargetAttributes = {
+					52CA48721BD79DFC0036633F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45K6MGRV9N;
+					};
+					52CA48861BD79DFD0036633F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45K6MGRV9N;
+						TestTargetID = 52CA48721BD79DFC0036633F;
+					};
+					52CA48911BD79DFD0036633F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45K6MGRV9N;
+						TestTargetID = 52CA48721BD79DFC0036633F;
+					};
+				};
+			};
+			buildConfigurationList = 52CA486E1BD79DFC0036633F /* Build configuration list for PBXProject "The Paper Trail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CA486A1BD79DFC0036633F;
+			productRefGroup = 52CA48741BD79DFC0036633F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CA48721BD79DFC0036633F /* The Paper Trail */,
+				52CA48861BD79DFD0036633F /* The Paper TrailTests */,
+				52CA48911BD79DFD0036633F /* The Paper TrailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CA48711BD79DFC0036633F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CA48811BD79DFD0036633F /* LaunchScreen.storyboard in Resources */,
+				52CA487E1BD79DFD0036633F /* Assets.xcassets in Resources */,
+				52CA487C1BD79DFD0036633F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA48851BD79DFD0036633F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA48901BD79DFD0036633F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CA486F1BD79DFC0036633F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CA48791BD79DFD0036633F /* ViewController.swift in Sources */,
+				52CA48771BD79DFD0036633F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA48831BD79DFD0036633F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CA488C1BD79DFD0036633F /* The_Paper_TrailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CA488E1BD79DFD0036633F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CA48971BD79DFD0036633F /* The_Paper_TrailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CA48891BD79DFD0036633F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CA48721BD79DFC0036633F /* The Paper Trail */;
+			targetProxy = 52CA48881BD79DFD0036633F /* PBXContainerItemProxy */;
+		};
+		52CA48941BD79DFD0036633F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CA48721BD79DFC0036633F /* The Paper Trail */;
+			targetProxy = 52CA48931BD79DFD0036633F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52CA487A1BD79DFD0036633F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CA487B1BD79DFD0036633F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52CA487F1BD79DFD0036633F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CA48801BD79DFD0036633F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CA48991BD79DFD0036633F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52CA489A1BD79DFD0036633F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CA489C1BD79DFD0036633F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Paper Trail/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-Trail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52CA489D1BD79DFD0036633F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Paper Trail/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-Trail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52CA489F1BD79DFD0036633F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Paper TrailTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-TrailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Paper Trail.app/The Paper Trail";
+			};
+			name = Debug;
+		};
+		52CA48A01BD79DFD0036633F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "The Paper TrailTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-TrailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Paper Trail.app/The Paper Trail";
+			};
+			name = Release;
+		};
+		52CA48A21BD79DFD0036633F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The Paper TrailUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-TrailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Paper Trail";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		52CA48A31BD79DFD0036633F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "The Paper TrailUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrjohnmorrow.The-Paper-TrailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "The Paper Trail";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CA486E1BD79DFC0036633F /* Build configuration list for PBXProject "The Paper Trail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CA48991BD79DFD0036633F /* Debug */,
+				52CA489A1BD79DFD0036633F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CA489B1BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper Trail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CA489C1BD79DFD0036633F /* Debug */,
+				52CA489D1BD79DFD0036633F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52CA489E1BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CA489F1BD79DFD0036633F /* Debug */,
+				52CA48A01BD79DFD0036633F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52CA48A11BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CA48A21BD79DFD0036633F /* Debug */,
+				52CA48A31BD79DFD0036633F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CA486B1BD79DFC0036633F /* Project object */;
+}
