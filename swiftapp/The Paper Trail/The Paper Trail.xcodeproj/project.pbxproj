@@ -187,6 +187,9 @@
 		52CA486B1BD79DFC0036633F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "John Morrow";
 				TargetAttributes = {
@@ -484,6 +487,7 @@
 				52CA489D1BD79DFD0036633F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CA489E1BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +496,7 @@
 				52CA48A01BD79DFD0036633F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CA48A11BD79DFD0036633F /* Build configuration list for PBXNativeTarget "The Paper TrailUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				52CA48A31BD79DFD0036633F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

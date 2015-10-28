@@ -27,10 +27,11 @@ class ViewController: UIViewController, UIWebViewDelegate  {
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         switch navigationType {
         case .LinkClicked:
-            let facebook = request.URL?.path!.rangeOfString("facebook$", options: .RegularExpressionSearch)
-            let tumblr = request.URL?.path!.rangeOfString("tumblr$", options: .RegularExpressionSearch)
-            let instagram = request.URL?.path!.rangeOfString("instagram$", options: .RegularExpressionSearch)
-            let credits = request.URL?.path!.rangeOfString("credits$", options: .RegularExpressionSearch)
+            print(request.URL?.host!)
+            let facebook = request.URL?.host!.rangeOfString("facebook", options: .RegularExpressionSearch)
+            let tumblr = request.URL?.host!.rangeOfString("thepapersmusic", options: .RegularExpressionSearch)
+            let instagram = request.URL?.host!.rangeOfString("instagram", options: .RegularExpressionSearch)
+            let credits = request.URL?.path!.rangeOfString("credits", options: .RegularExpressionSearch)
             
             if (facebook==nil && tumblr==nil && instagram==nil && credits==nil) {
                 //then it's in the app and the click stays in the app
